@@ -4,15 +4,16 @@ import { MainWrapper } from './components/UI'
 import Main from './components/Main';
 
 
+
 class App extends Component{
     render(){
         return(
-            <MainWrapper>
-               <Provider>
+            <Provider>
+               <MainWrapper>
                     <Main/>
-               </Provider>
-            </MainWrapper>
-        )
+               </MainWrapper>
+            </Provider>
+            )
     }
 };
 

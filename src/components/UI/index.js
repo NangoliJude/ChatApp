@@ -14,7 +14,11 @@ export const theme = {
     successColor: "green",
     font: "Tahoma"
 }
-
+export const Header = styled.header`
+width: 100vw;
+height: 75px;
+background-color: red;
+`
 export const MainWrapper = styled.main`
 width: 100vw;
 height: 100vh
@@ -23,4 +27,6 @@ background-color: ${ props => props.theme.mainColor }
 
 export const SectionWrapper = styled.section`
 display: flex;
+align-items: stretch
+height: 100vh;
 `

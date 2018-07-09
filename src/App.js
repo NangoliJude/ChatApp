@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { Provider } from './components/Context';
+import Main from './components/Main';
+
 
 class App extends Component{
     render(){
         return(
             <main>
-                haha
+               <Provider>
+                    <Main/>
+               </Provider>
             </main>
         )
     }

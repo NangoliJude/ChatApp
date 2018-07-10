@@ -7,7 +7,8 @@ const Form = ()=>{
               type="text"
               name="body"
               placeholder="Type a message ..."
-              autoFocusrequired
+              autoFocus
+              required
               />
               <button type="submit">Send</button>
         </form>

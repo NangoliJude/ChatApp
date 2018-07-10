@@ -1,20 +1,20 @@
 import React from 'react';
-import Message from './Message';
-
+import { Context } from './Context/Context';
 
 
 const MessageList = ()=>{
-    const messages =[
-        {id: 1, userName: 'Jude', body:"Chatting App"},
-        {id: 2, userName: 'Eric', body: "Yo Jude"}
-    ]
     return(
-        <div>
-           {
-               messages.map(message => <Message message = {message} key={message.id}/>)
-           }
-        </div>
-        )
+        <Context.Consumer>
+          {(context)=>{
+              const { messages } = context.state;
+              return(
+              <React.Fragment>
+               {messages.map(message=> <p key={message.id}>{message.userName} - {message.body}</p>)}
+              </React.Fragment>
+              )
+          }}
+        </Context.Consumer>
+    )
 };
 
 export default MessageList;

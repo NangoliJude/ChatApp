@@ -1,13 +1,15 @@
 import React from 'react';
 import ChatHeader from './UI/ChatHeader';
-import Message from './Message';
+import MessageList from './MessageList';
+import Form from './Form';
 
 
 const Chat = ()=>{
     return(
         <div>
             <ChatHeader/>
-            <Message/>
+            <MessageList/>
+            <Form/>
         </div>
         )
 };
